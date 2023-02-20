@@ -1,0 +1,459 @@
+/*============================================================================*/
+/* Table Component */
+.t-datatable {
+  margin: 10px auto;
+  // padding:1rem;
+  padding: 0;
+
+  // Making the rows to be in full row and not having multiple lines
+  // table-layout:auto;
+  // white-space:nowrap;
+  // width:100%;
+
+  .table-responsive {
+    @include shadows();
+    background-color: #ffffff;
+    border-radius: 1rem;
+    // border: 3px solid $primary;
+    // box-shadow: 5px 5px $primary;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  h3 {
+    color: $primary;
+    // color: black;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 0.5rem 0.5rem;
+
+    @include media("<tablet") {
+      border-bottom-style: inset;
+      border-color: $secondary;
+    }
+  }
+
+  .tb-select-row:hover {
+    @include hoverbtn();
+  }
+
+  .input-sm {
+    @include clean();
+    border-bottom-right-radius: 3px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    border-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #333;
+    font-size: 12px;
+    height: 30px;
+    line-height: 1.5;
+  }
+
+  .input-sm:focus {
+    background: none;
+    box-shadow: none;
+  }
+
+  .btn.btn-primary.btn-sm.m-l-xs.t-refresh-button {
+    &:hover {
+      @include defaulthov;
+    }
+  }
+
+  .filter-tabs {
+    background: none;
+    float: right;
+  }
+
+  .filters-box-display .filter-items {
+    border: 1px dashed $primary;
+
+    .filter-item {
+      background-color: $primary;
+      color: #ffffff;
+
+      i {
+        background-color: $secondary;
+        color: #ffffff;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .table-wrap>.table tr {
+    background-color: #ffffff;
+    // border-bottom: 1px solid $prima1;
+    color: $primary;
+
+    &:last-child {
+      border: none;
+    }
+
+    &:nth-last-child(2n) {
+      background-color: hsla(240, 7%, 93%, 1);
+    }
+  }
+
+  table>tbody>tr {
+    border: none;
+  }
+
+  .table-wrap {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    min-height: 100px;
+    max-height: 1500px;
+    scrollbar-color: $primary $secondary;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+			display: none;
+		}
+    thead th {
+      background: $prima1;
+      color: $primary;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  table,
+  table>tbody>tr>th,
+  table>tfoot>tr>th,
+  table>thead>tr>td,
+  table>tbody>tr>td,
+  table>tfoot>tr>td {
+    border: none;
+    line-height: 2.5;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .group-wrap.with-group {
+    /*filtered groups*/
+    background: none;
+    border: none;
+    padding: 0 25px 20px;
+  }
+
+  .group-wrap span.collapsed-icon {
+    color: $secondary;
+  }
+
+  .group-wrap.with-group .field-title {
+    color: $secondary;
+  }
+
+  .group-wrap.with-group .val-title {
+    color: $primary;
+    font-size: 18px;
+  }
+
+  .group-wrap.with-group span.count-title,
+  .group-wrap.with-group span.parent-collapse {
+    background: none;
+    color: $primary;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+  }
+
+  .group-wrap.with-group .group-title {
+    border-bottom: 2px solid transparent;
+    background: #d3d3d4;
+    padding-bottom: 2px;
+
+    &:hover {
+      background: none;
+      border-bottom: 2px solid $secondary;
+    }
+  }
+
+  table>tbody>tr>td {
+    color: #444;
+    font-size: 1.25rem;
+    line-height: normal;
+    vertical-align: top;
+  }
+
+  .allow-inline-edit {
+    // pointer-events: none;
+    cursor: default;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    &:hover {
+      // pointer-events: none;
+      cursor: default;
+      border: none;
+      -webkit-box-shadow: transparent;
+      box-shadow: transparent;
+
+      &::after {
+        // pointer-events: none;
+        cursor: default;
+        cursor: default;
+        background: transparent;
+        padding: 0px;
+        right: 5px;
+        top: 0px;
+        color: transparent;
+      }
+    }
+  }
+
+  .table-hover>tbody>tr:hover {
+    // background: $prima1;
+    // border-bottom: 1px solid $primary;
+    // box-shadow: 0 -1px $primary;
+
+    // border-bottom: 1px solid $prima1;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  table>thead>tr>th {
+    border: none;
+    color: $lighttext;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    // text-transform: uppercase;
+    text-transform: none;
+    transition: all 0.1s ease-in-out;
+    vertical-align: top;
+    position: sticky;
+    text-align: center;
+    top: -1rem;
+  }
+
+  .pagination>.disabled>a,
+  .pagination>.disabled>span {
+    @include primarybtn(none);
+    padding: 6px 12px;
+
+    &:hover {
+      @include hoverbtn();
+    }
+  }
+
+  .pagination-sm>li>a,
+  .pagination-sm>li>span {
+    @include primarybtn(none);
+    padding: 6px 12px;
+
+    &:hover {
+      @include hoverbtn();
+    }
+  }
+
+  .pagination>.active>a,
+  .pagination>.active>span {
+    @include hoverbtn();
+    padding: 6px 12px;
+  }
+
+  .table .sortable:hover {
+    background-color: #ffffff;
+    box-shadow: inset 0 -2px $primary; //Edited
+  }
+
+  .td-link {
+    font-weight: bold;
+    @include linkhover();
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  table a:not(.btn) {
+    text-decoration: none;
+  }
+
+  // This is the refresh, filter, search bar
+  .table-actions {
+    @include clean();
+    margin-top: 30px;
+  }
+
+  .t-records-button {
+    @include norecord();
+  }
+
+  .form-control {
+    background: none;
+    border: 1px solid #d3d3d4;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #484848;
+    font-weight: bold;
+    outline: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      // border-bottom: 2px solid $primary;
+      box-shadow: none;
+      color: $primary;
+    }
+  }
+
+  .btn.btn-sm {
+    //added
+    margin-top: 0px;
+  }
+
+  .btn.btn-primary.btn-sm.m-l-xs.t-refresh-button {
+    &:hover {
+      background: $primary;
+      color: #ffffff;
+    }
+  }
+
+  .btn.btn-primary.btn-sm.m-l-xs.t-new-record-button {
+    background: #ffffff;
+    border: 2px solid $primary;
+    border-radius: 5px;
+    color: $primary;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      background: $primary;
+      @include btnshadow();
+      color: #fff;
+    }
+  }
+
+  .btn.btn-info.btn-sm.m-l-xs.t-batch-button {
+    color: #ffffff;
+    background-color: $primary; //Edited
+    background-image: none;
+    border-color: #0c0c0c;
+    outline: none;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $primary; //Edited
+      border-color: $primary; //Edited
+      outline: none;
+    }
+  }
+
+  .nav-tabs {
+    background: #ffffff;
+    border: none;
+  }
+
+  .nav.nav-tabs>li>a {
+    @include primarybtn(none);
+    border-radius: 5px;
+    margin: 2px 2px;
+    padding: 5px 10px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+      @include media("<tablet") {
+        transform: none;
+      }
+    }
+  }
+
+  .filter-tabs .nav-tabs>li.active>a {
+    background: $secondary;
+    outline: none;
+    color: white;
+  }
+
+  .thumb-wrap img {
+    border-radius: 100%;
+    height: 50px;
+    object-fit: cover;
+    width: 50px;
+  }
+}
+
+/* Custom Table Component */
+.borderless-table {
+  &.t-datatable {
+    .table-responsive {
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .table-actions {
+      display: none;
+    }
+
+    .table-wrap>.table tr {
+      border: none;
+    }
+
+    .table-hover>tbody>tr:hover {
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.no-refresh {
+  &.t-datatable {
+    .btn.btn-primary.btn-sm.m-l-xs.t-refresh-button {
+      display: none;
+    }
+  }
+}
+
+.just-add-btn {
+  &.t-datatable {
+    .table-responsive {
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      text-align: left;
+      background: none;
+    }
+
+    .table-actions {
+      margin: 0;
+    }
+
+    .table-wrap>.table tr {
+      border: none;
+      display: none; //added
+    }
+
+    .table-hover>tbody>tr:hover {
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+
+    .btn.btn-primary.btn-sm.m-l-xs.t-refresh-button {
+      display: none;
+    }
+  }
+}
+
+.no-filter-table {
+  .table-actions {
+    display: none;
+  }
+}

@@ -1,0 +1,95 @@
+/*Theme Name:Better Never Stops - Ideal Furniture Theme*/
+/*ThemeTheme URI:*/
+/*Description:This is the Official Theme for Ideal Furniture*/
+/*Designer: Manuel San Ramon*/
+/*Template:*/
+/*Version:1.0.0*/
+/*Tags:*/
+
+/* Branding */
+@import "branding-LaterLifeLendingSolutions";
+
+/* Styling For All Components */
+@import "mixins";
+@import "_include-media.scss";
+@import "globals";
+
+/* Components - DO NOT DELETE*/
+@import "accordion";
+@import "breadcrumbs";
+@import "calendar";
+@import "card";
+@import "chart";
+@import "detail";
+@import "form";
+@import "html";
+@import "image";
+@import "kanban";
+@import "list";
+@import "loading";
+@import "login";
+@import "map";
+@import "menu";
+// @import "menu-2";
+@import "modal";
+@import "profile";
+@import "pivottable";
+@import "search";
+@import "sidebar";
+@import "signup";
+@import "signup-login-style";
+@import "table";
+@import "tabsLLL";
+@import "user-menu";
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+
+.t-html a::before {
+    background-color: none;
+}
+
+//FOOTER Start-----------------
+.x-footer {
+    background: white;
+    bottom: 0;
+    box-shadow: 1000px 0 white, -1000px 0 white;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  
+    img {
+      height: 5.5em;
+      width: auto;
+    }
+  }
+  body {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 150px;
+  }
+  @media (max-width: 991px) {
+    body {
+      padding-bottom: 350px;
+    }
+  }
+  //FOOTER End-----------------
+
+  .modal-dialog.modal-lg .btn.btn-danger {
+    background: #7e7ba7;
+    border-radius: .5em;
+    color: white;
+    margin: auto;
+    outline: none;
+  }
+  
+  .modal-dialog.modal-lg .btn.btn-danger:hover{
+    color: #7e7ba7;
+    background: white;
+    border-color: white;
+    box-shadow:0 8px 24px rgba(149, 157, 165, 0.2);
+  }
