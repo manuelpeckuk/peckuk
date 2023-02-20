@@ -1,0 +1,47 @@
+@media(min-width:0px) {
+    .t-task .af-task-component {
+        margin: 20px 0;
+        padding: 0;
+        background: white;
+        border: 2px solid #DCE8FF;
+        border-radius: 16px;
+        box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .t-task .af-task-component h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        padding: 10px;
+        color: #19435c;
+        border: none;
+    }
+
+    .t-task .af-task-component .desc {
+        color: #798FA6;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .t-task .af-task-component button {
+        border-radius: 24px;
+        background: #19435c;
+        border: 1px solid #19435c;
+    }
+
+    .t-task .af-task-component button:hover {
+        background: #26b1ed;
+        border: 1px solid #19435c;
+        color: white;
+    }
+}
+
+@media(min-width:768px) {
+    .t-task .af-task-component h3 {
+        font-size: 20px;
+    }
+
+    .t-task .af-task-component .desc {
+        font-size: 14px;
+    }
+}

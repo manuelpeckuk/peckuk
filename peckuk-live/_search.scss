@@ -1,0 +1,109 @@
+/*============================================================================*/
+/* Search Component */
+.t-search {
+    @include shadows();
+    background-color: #ffffff;
+    border-radius: 1rem;
+    margin: .5rem auto;
+    padding: 1rem;
+    position: relative;
+
+    h3 {
+        color: $primary;
+        font-weight: bold;
+    }
+
+    .lbl {
+        color: $lighttext;
+        // font-size:1.25rem;
+        font-weight: 700;
+        // letter-spacing:1px;
+        text-align: left;
+        // text-transform:uppercase;
+    }
+
+    .form-control {
+        background: rgba(109, 124, 144, .1);
+        border: 2px solid transparent;
+        box-shadow: none;
+        color: $lighttext;
+        font-size: 1.25rem;
+        // font-weight:bold;
+        height: 35px;
+        line-height: 1.429;
+        margin: auto -1px;
+        padding: 5px 15px;
+
+        //width:100%; this was to allow shorter form fields
+        &:hover {
+            border: 2px solid $primary;
+        }
+
+        &:focus {
+            background-color: #ffffff;
+            border: 2px solid $primary;
+        }
+    }
+
+    .btn.btn-success.af-search-form-submit {
+        background: $primary;
+        border: 2px solid $primary;
+        font-weight: bold;
+        // width: 100%;
+        outline: none;
+        // padding: 10px 0;
+        transition: all .1s ease-in-out;
+
+        &:hover {
+            background: none;
+            @include btnshadow();
+            color: $primary;
+        }
+    }
+
+    .btn.btn-link.af-search-form-clear-button {
+        color: $statred;
+        // display: none;
+    }
+
+    .help-block{
+        font-style: italic;
+    }
+}
+
+//to hide clear Button
+.hide-clearBtn {
+    .af-search-form-clear-button {
+        display: none;
+    }
+}
+
+//better search is making it look like jnt search but with clear btn
+.better-search {
+    width: 50%;
+    box-shadow: none;
+
+    .col-md-12 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .af-search-form-clear-button {
+        display: block;
+    }
+}
+
+//better search is making it look like jnt search with no clear btn
+.noClear-better-search {
+    width: 50%;
+    box-shadow: none;
+
+    .col-md-12 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .af-search-form-clear-button {
+        display: none;
+    }
+}
