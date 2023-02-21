@@ -53,7 +53,8 @@
 
   .filter-tabs {
     background: none;
-    float: right;
+    justify-content: flex-end;
+    display: flex;
   }
 
   .filters-box-display .filter-items {
@@ -171,7 +172,7 @@
 
   table>tbody>tr>td {
     color: #444;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: normal;
     vertical-align: top;
   }
@@ -592,7 +593,6 @@
 
   .t-datatable .table-responsive table thead tr th span {
     color: $lighttext;
-    font-size: 12px;
     font-weight: 700;
   }
 
@@ -606,7 +606,6 @@
 
   .t-datatable .table-responsive table tbody tr td span {
     color: $lighttext;
-    font-size: 12px;
     font-weight: 500;
   }
 

@@ -4287,7 +4287,8 @@ a:hover, a:focus {
 }
 .t-datatable .filter-tabs {
   background: none;
-  float: right;
+  justify-content: flex-end;
+  display: flex;
 }
 .t-datatable .filters-box-display .filter-items {
   border: 1px dashed #19435c;
@@ -4384,7 +4385,7 @@ a:hover, a:focus {
 }
 .t-datatable table > tbody > tr > td {
   color: #444;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: normal;
   vertical-align: top;
 }
@@ -4740,7 +4741,6 @@ a:hover, a:focus {
   }
   .t-datatable .table-responsive table thead tr th span {
     color: #798FA6;
-    font-size: 12px;
     font-weight: 700;
   }
   .t-datatable .table-responsive table tbody tr {
@@ -4751,7 +4751,6 @@ a:hover, a:focus {
   }
   .t-datatable .table-responsive table tbody tr td span {
     color: #798FA6;
-    font-size: 12px;
     font-weight: 500;
   }
   .t-datatable .table-responsive table tbody tr td a {
