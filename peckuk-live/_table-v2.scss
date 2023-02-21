@@ -2,7 +2,6 @@
 /* Table Component */
 .t-datatable {
   margin: 10px auto;
-  // padding:1rem;
   padding: 0;
 
   // Making the rows to be in full row and not having multiple lines
@@ -14,15 +13,12 @@
     @include shadows();
     background-color: #ffffff;
     border-radius: 1rem;
-    // border: 3px solid $primary;
-    // box-shadow: 5px 5px $primary;
     padding: 1rem;
     text-align: left;
   }
 
   h3 {
     color: $primary;
-    // color: black;
     font-weight: bold;
     margin: 0;
     padding: 0 0 0.5rem 0.5rem;
@@ -631,8 +627,6 @@
   }
 
   .t-datatable .table-responsive table tbody tr td a {
-    background: none;
-    color: $primary;
     border: none;
     border-radius: 16px;
     padding: 8px;
@@ -647,8 +641,6 @@
   }
 
   .t-datatable .table-responsive table tbody tr td a:hover {
-    color: $accent1;
-    background: none;
     border: none;
   }
 

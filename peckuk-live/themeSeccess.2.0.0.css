@@ -1,9 +1,9 @@
-/*Theme Name:Better Never Stops - SECCESS Theme*/
+/*Theme Name: Digital Teams App 2023 Theme*/
 /*ThemeTheme URI:*/
-/*Description:This is the Official Theme for SECCESS*/
+/*Description:This is the Official Theme for Digital Teams App*/
 /*Designer: Manuel San Ramon*/
 /*Template:*/
-/*Version:1.0.0*/
+/*Version:2.0.0*/
 /*Tags: customized*/
 /* Branding */
 /* $statgreen:#7fb11b; */
@@ -3294,8 +3294,6 @@ a:hover, a:focus {
     font-weight: 500;
   }
   .t-datatable .table-responsive table tbody tr td a {
-    background: none;
-    color: #01556a;
     border: none;
     border-radius: 16px;
     padding: 8px;
@@ -3309,8 +3307,6 @@ a:hover, a:focus {
     text-align: center;
   }
   .t-datatable .table-responsive table tbody tr td a:hover {
-    color: #26b1ed;
-    background: none;
     border: none;
   }
   /* btn Primary */
