@@ -1506,53 +1506,6 @@ td.open-allow-inline-edit {
 /* Chart Component */
 /*============================================================================*/
 /*Detail Componenent*/
-.sv-detail .t-detail {
-  box-shadow: 0px 5px 15px rgba(149, 157, 165, 0.2);
-  background-color: #ffffff;
-  border-radius: 1rem;
-  margin: 10px auto;
-  padding: 1rem 3rem;
-  position: relative;
-}
-.sv-detail .t-detail label {
-  color: #19435c;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-}
-.sv-detail .t-detail label:before {
-  background: #19435c;
-  border-radius: 50%;
-  color: #ffffff;
-  text-align: center;
-  padding: 0 5px;
-}
-.sv-detail .t-detail .form-group {
-  color: hsl(0deg, 0%, 10%);
-  display: inline-block;
-  font-size: 15px;
-  padding-left: 25px;
-}
-.sv-detail .t-detail span {
-  display: inline-block;
-}
-.sv-detail .t-detail a {
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-.sv-detail .t-detail a:hover, .sv-detail .t-detail a:focus {
-  transform: scale(1.01);
-  outline: none;
-  outline: none;
-}
-.sv-detail .t-detail .img-responsive {
-  border: none;
-  outline: none;
-  box-shadow: 10px 10px #19435c;
-  margin: 10px auto;
-}
-
 .t-detail {
   box-shadow: 0px 5px 15px rgba(149, 157, 165, 0.2);
   background-color: #ffffff;
@@ -1613,7 +1566,6 @@ td.open-allow-inline-edit {
     color: #19435c;
   }
   .t-detail .af-detail label {
-    color: #798FA6;
     font-size: 12px;
     font-weight: 700;
     margin: 0;
