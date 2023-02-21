@@ -4346,7 +4346,6 @@ a:hover, a:focus {
 .t-datatable table > tbody > tr > td,
 .t-datatable table > tfoot > tr > td {
   border: none;
-  line-height: 2.5;
 }
 .t-datatable .group-wrap.with-group {
   /*filtered groups*/
