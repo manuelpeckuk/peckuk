@@ -4386,7 +4386,6 @@ a:hover, a:focus {
 .t-datatable table > tbody > tr > td {
   color: #444;
   font-size: 1.5rem;
-  line-height: normal;
   vertical-align: top;
 }
 .t-datatable .allow-inline-edit {
