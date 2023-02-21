@@ -4,11 +4,6 @@
   margin: 10px auto;
   padding: 0;
 
-  // Making the rows to be in full row and not having multiple lines
-  // table-layout:auto;
-  // white-space:nowrap;
-  // width:100%;
-
   .table-responsive {
     @include shadows();
     background-color: #ffffff;
@@ -227,7 +222,6 @@
     letter-spacing: 1px;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
-    // text-transform: uppercase;
     text-transform: none;
     transition: all 0.1s ease-in-out;
     vertical-align: top;
@@ -456,14 +450,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 // V2
 @media (min-width:0px) {
   .t-datatable {
@@ -542,7 +528,6 @@
   .t-datatable .table-responsive .table-actions .pull-left.form-inline .form-control {
     border: 1px solid $primary;
     border-radius: 24px 0px 0px 24px;
-    font-size: 12px;
     min-width: 100px;
   }
 
@@ -551,7 +536,6 @@
     color: white;
     border: 1px solid $primary;
     border-radius: 16px;
-    font-size: 12px;
     padding: 5px 10px;
     margin: 0 2px;
   }
@@ -638,6 +622,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    i{
+      padding: 0 .5rem;
+    }
   }
 
   .t-datatable .table-responsive table tbody tr td a:hover {
@@ -724,20 +712,6 @@
     flex-direction: row;
   }
 
-  .t-datatable .table-responsive h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-
-  .t-datatable .table-responsive .table-actions .pull-left.form-inline .form-control,
-  .t-datatable .table-responsive .table-actions .pull-left.form-inline .btn,
-  .t-datatable .table-responsive .table-actions .pull-right.form-inline a,
-  .t-datatable .table-responsive table thead tr th span,
-  .t-datatable .table-responsive table tbody tr td span,
-  .t-datatable .table-responsive table tbody tr td a {
-    font-size: 14px;
-  }
-
   .t-datatable .table-responsive .table-actions .pull-left.form-inline .form-control,
   .t-datatable .table-responsive .table-actions .pull-right.form-inline .form-control,
   .t-datatable .table-responsive .table-actions .hit-pagination2 ul li a {
@@ -750,14 +724,6 @@
     font-size: 24px;
   }
 
-  .t-datatable .table-responsive .table-actions .pull-left.form-inline .form-control,
-  .t-datatable .table-responsive .table-actions .pull-left.form-inline .btn,
-  .t-datatable .table-responsive .table-actions .pull-right.form-inline a,
-  .t-datatable .table-responsive table thead tr th span,
-  .t-datatable .table-responsive table tbody tr td span,
-  .t-datatable .table-responsive table tbody tr td a {
-    font-size: 16px;
-  }
 
   .t-datatable .table-responsive .table-actions .pull-left.form-inline .form-control,
   .t-datatable .table-responsive .table-actions .pull-right.form-inline .form-control,

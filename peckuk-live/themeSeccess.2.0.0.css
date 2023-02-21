@@ -3177,7 +3177,6 @@ a:hover, a:focus {
   .t-datatable .table-responsive .table-actions .pull-left.form-inline .form-control {
     border: 1px solid #01556a;
     border-radius: 24px 0px 0px 24px;
-    font-size: 12px;
     min-width: 100px;
   }
   .t-datatable .table-responsive .table-actions .pull-left.form-inline .btn {
@@ -3185,7 +3184,6 @@ a:hover, a:focus {
     color: white;
     border: 1px solid #01556a;
     border-radius: 16px;
-    font-size: 12px;
     padding: 5px 10px;
     margin: 0 2px;
   }
@@ -3258,6 +3256,9 @@ a:hover, a:focus {
     align-items: center;
     text-align: center;
   }
+  .t-datatable .table-responsive table tbody tr td a i {
+    padding: 0 0.5rem;
+  }
   .t-datatable .table-responsive table tbody tr td a:hover {
     border: none;
   }
@@ -3327,18 +3328,6 @@ a:hover, a:focus {
   .t-datatable .table-responsive .table-actions {
     flex-direction: row;
   }
-  .t-datatable .table-responsive h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  .t-datatable .table-responsive .table-actions .pull-left.form-inline .form-control,
-  .t-datatable .table-responsive .table-actions .pull-left.form-inline .btn,
-  .t-datatable .table-responsive .table-actions .pull-right.form-inline a,
-  .t-datatable .table-responsive table thead tr th span,
-  .t-datatable .table-responsive table tbody tr td span,
-  .t-datatable .table-responsive table tbody tr td a {
-    font-size: 14px;
-  }
   .t-datatable .table-responsive .table-actions .pull-left.form-inline .form-control,
   .t-datatable .table-responsive .table-actions .pull-right.form-inline .form-control,
   .t-datatable .table-responsive .table-actions .hit-pagination2 ul li a {
@@ -3348,14 +3337,6 @@ a:hover, a:focus {
 @media (min-width: 1200px) {
   .t-datatable .table-responsive h3 {
     font-size: 24px;
-  }
-  .t-datatable .table-responsive .table-actions .pull-left.form-inline .form-control,
-  .t-datatable .table-responsive .table-actions .pull-left.form-inline .btn,
-  .t-datatable .table-responsive .table-actions .pull-right.form-inline a,
-  .t-datatable .table-responsive table thead tr th span,
-  .t-datatable .table-responsive table tbody tr td span,
-  .t-datatable .table-responsive table tbody tr td a {
-    font-size: 16px;
   }
   .t-datatable .table-responsive .table-actions .pull-left.form-inline .form-control,
   .t-datatable .table-responsive .table-actions .pull-right.form-inline .form-control,
