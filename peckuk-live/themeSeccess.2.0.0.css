@@ -847,8 +847,6 @@ td.open-allow-inline-edit {
     color: white;
     padding: 5px 15px;
     border-radius: 16px;
-    background: #01556a;
-    border: 1px solid #01556a;
     box-shadow: none;
     font-weight: 600;
     margin: 3px;
@@ -947,10 +945,8 @@ td.open-allow-inline-edit {
   }
   .t-accordion .row .t-accordion-item.active .accordion-body .form-group a {
     border-radius: 16px;
-    border: 1px solid #01556a;
     font-size: 12px;
     padding: 5px 10px;
-    background: #01556a;
   }
   .t-accordion .row .t-accordion-item.active .accordion-body .form-group a:hover {
     background: #26b1ed;
