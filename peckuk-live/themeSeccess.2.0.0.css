@@ -2836,8 +2836,6 @@ a:hover, a:focus {
 .t-datatable table > tfoot > tr > td {
   border: none;
   line-height: 2.5;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
 }
 .t-datatable .group-wrap.with-group {
   /*filtered groups*/
@@ -2875,7 +2873,7 @@ a:hover, a:focus {
 .t-datatable table > tbody > tr > td {
   color: #444;
   font-size: 1.5rem;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .t-datatable .allow-inline-edit {
   cursor: default;
@@ -2911,7 +2909,7 @@ a:hover, a:focus {
   padding-top: 1.5rem;
   text-transform: none;
   transition: all 0.1s ease-in-out;
-  vertical-align: top;
+  vertical-align: middle;
   position: sticky;
   text-align: center;
   top: -1rem;
